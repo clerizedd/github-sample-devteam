@@ -1,17 +1,24 @@
 import java.util.Scanner;
 public class handson3 {
     public static void main (String [] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);    
         int y=0;
-        String x;
-        String b = "java string";
+                while (y<3){  
+            System.out.print ("Enter a String: ");
+        String input = sc.nextLine ();      
+       switch (input){
+            case "java":
+            System.out.println ("Java is the best programming language");
+            break;
+            
+            case "java string":
+            System.out.println ("This is an example for Java Switch using String");
+            break;
 
-    while (y < 3){
-        System.out.print ("Enter a String: ");
-        x = sc.nextLine() ;
-        
-        if (x=="java"){
-            System.out.print ("Java is the best programming language");
+            default:
+            System.out.println ("Sorry, please enter the different word"); 
         }
-
-    }}}
+        y++;
+    }
+    }
+}
